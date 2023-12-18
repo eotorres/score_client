@@ -4,3 +4,5 @@ seaborn
 pandas
 matplotlib
 pycaret
+xlrd
+openpyxl
