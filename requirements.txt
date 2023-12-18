@@ -3,7 +3,8 @@ streamlit-extras
 seaborn
 pandas
 matplotlib
-pycaret
+pycaret==3.2.0
 xlrd
 openpyxl
+xgboost==1.7.5
 
