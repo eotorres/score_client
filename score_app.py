@@ -8,7 +8,7 @@ def predict_client(model, df):
     #print('aqui teste',predictions_data) 
     return predictions_data['prediction_label'][0]
     
-model = load_model(r'C:\Users\emmanueltorres\Downloads\Scripts\streamlit\risco_credito\credit_scoring\Final_Model_xgboost')
+model = load_model('Final_Model_xgboost')
 
 
 st.title('App Web de pontuação de crédito')
