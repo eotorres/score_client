@@ -6,3 +6,4 @@ matplotlib
 pycaret
 xlrd
 openpyxl
+xgboost
