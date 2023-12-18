@@ -97,7 +97,7 @@ features = {'Meses de vencimento': Maturite_mois,
 features_df  = pd.DataFrame([features])
 
 map_dict = {0:'Bom Cliente',
-            1:'Mal Cliente'}
+            1:'Ruim Cliente'}
 st.table(features_df)  
 
 if st.button('Previsão'):
