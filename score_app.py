@@ -2,6 +2,45 @@ from pycaret.classification import load_model, predict_model
 import streamlit as st
 import pandas as pd
 
+# Configurar a interface do Streamlit com um tema personalizado
+st.set_page_config(
+    page_title="Score Client",
+    page_icon="💰",
+    layout="wide",
+)
+
+# Estilos CSS personalizados
+CSS = """
+<style>
+    .stApp {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    .stAlert {
+        padding: 0.75rem 1rem;
+        border-radius: 0.25rem;
+        background-color: #f8d7da;
+        color: #721c24;
+        margin-bottom: 1rem;
+    }
+    .stSuccess {
+        padding: 0.75rem 1rem;
+        border-radius: 0.25rem;
+        background-color: #d4edda;
+        color: #155724;
+        margin-bottom: 1rem;
+    }
+    .stTable {
+        background-color: #f8f9fa;
+    }
+    .css-1aumxhk {
+        max-width: 200px;
+    }
+</style>
+"""
+st.markdown(CSS, unsafe_allow_html=True)
+
 
 def predict_client(model, df):    
     predictions_data = predict_model(model, df)   
