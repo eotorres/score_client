@@ -3,3 +3,4 @@ streamlit-extras
 seaborn
 pandas
 matplotlib
+pycaret
